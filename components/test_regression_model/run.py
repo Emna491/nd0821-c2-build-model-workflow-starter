@@ -8,9 +8,9 @@ import wandb
 import mlflow
 import pandas as pd
 from sklearn.metrics import mean_absolute_error
-
 from wandb_utils.log_artifact import log_artifact
 
+import sklearn; print("#########################Scikit-Learn", sklearn.__version__)
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
